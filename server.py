@@ -5,7 +5,7 @@ s.listen(10)
 while True:
     conn, addr = s.accept()
     while True:
-        if date == b'close': break
+        if data == b'close': break
         data = conn.recv(1024)
         conn.send(data)
     conn.close()
